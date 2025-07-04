@@ -9,8 +9,8 @@ const Qurollar = () => {
   return (
     <>
       <div>
-        <section id="Dasturlar">
-          <h2 className="text-5xl font-bold mb-4 text-orange-500 text-center cursor-default select-none">
+        <section id="Dasturlar" className="scroll-mt-25">
+          <h2 className="text-5xl font-bold mb-4 text-green-500 text-center cursor-default select-none">
             Asosiy qurollarim
           </h2>
           <div className="flex flex-col gap-8 mt-20">
