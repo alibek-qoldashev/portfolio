@@ -3,8 +3,8 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Calc from "../assets/calc.png";
 import Musc from "../assets/musc.png";
-
-
+import Media from "../assets/media.png";
+import Weather from "../assets/weather.png";
 
 const Loyihalar = () => {
   useEffect(() => {
@@ -25,49 +25,91 @@ const Loyihalar = () => {
               Mening loyihalarim
             </h2>
             <div className="flex justify-around">
-              <a href="https://dynamic-tarsier-b0c5e5.netlify.app/" data-aos="fade-up"  data-aos-delay="300" data-aos-duration="1500">
-                <div
-                  className="w-80 h-50 rounded-2xl bg-orange-500 px-3 py-5 "
-                 
-                >
+              <a
+                href="https://dynamic-tarsier-b0c5e5.netlify.app/"
+                data-aos="fade-up"
+                data-aos-delay="300"
+                data-aos-duration="1500"
+              >
+                <div className="w-80 h-50 rounded-2xl bg-orange-500 px-3 py-5 ">
                   <img className="rounded-2xl" src={Calc} alt="" />
                 </div>
-                <p className="text-center text-3xl" data-aos="fade-up " data-aos-delay="300" data-aos-duration="1500">Calculator</p>
-              </a>
-              <a href="https://eloquent-pixie-a12921.netlify.app/" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1500">
-                <div
-                  className="w-80 h-50 rounded-2xl bg-orange-500 px-3 py-6 "
-                  
+                <p
+                  className="text-center text-3xl"
+                  data-aos="fade-up "
+                  data-aos-delay="300"
+                  data-aos-duration="1500"
                 >
+                  Calculator
+                </p>
+              </a>
+              <a
+                href="https://relaxed-jalebi-86482b.netlify.app/"
+                data-aos="fade-up"
+                data-aos-delay="300"
+                data-aos-duration="1500"
+              >
+                <div className="w-80 h-50 rounded-2xl bg-orange-500 px-3 py-6 ">
                   <img className="rounded-2xl" src={Musc} alt="" />
                 </div>
-                <p className="text-center text-3xl" data-aos="fade-up " data-aos-delay="400" data-aos-duration="1500">Music player</p>
-              </a>
-              <a href="" data-aos="fade-up"  data-aos-delay="300" data-aos-duration="1500">
-                <div
-                  className="w-80 h-50 rounded-2xl bg-orange-500 p-3 "
-                  data-aos="fade-up"
+                <p
+                  className="text-center text-3xl"
+                  data-aos="fade-up "
+                  data-aos-delay="400"
+                  data-aos-duration="1500"
                 >
-                  <img className="rounded-2xl" src="" alt="" />
+                  Music player
+                </p>
+              </a>
+              <a
+                href="https://react-radio-browser-five.vercel.app/"
+                data-aos="fade-up"
+                data-aos-delay="300"
+                data-aos-duration="1500"
+              >
+                <div className="w-80 h-50 rounded-2xl bg-orange-500 px-3 py-4 ">
+                  <img className="rounded-2xl" src={Media} alt="" />
                 </div>
-                <p className="text-center text-3xl"></p>
+                <p
+                  className="text-center text-3xl"
+                  data-aos="fade-up "
+                  data-aos-delay="400"
+                  data-aos-duration="1500"
+                >
+                  Media Web
+                </p>
               </a>
             </div>
             <div className="flex justify-around">
+              <a
+                href="https://weather-react-app-goab.vercel.app/"
+                data-aos="fade-up"
+                data-aos-delay="300"
+                data-aos-duration="1500"
+              >
+                <div className="w-80 h-50 rounded-2xl bg-orange-500 px-3 py-4 ">
+                  <img className="rounded-2xl" src={Weather} alt="" />
+                </div>
+                <p
+                  className="text-center text-3xl"
+                  data-aos="fade-up "
+                  data-aos-delay="400"
+                  data-aos-duration="1500"
+                >
+                  Weather App
+                </p>
+              </a>
               <div
                 className="w-80 h-50 rounded-2xl bg-orange-500 "
                 data-aos="fade-up"
-                 data-aos-delay="300" data-aos-duration="1500"
+                data-aos-delay="300"
+                data-aos-duration="1500"
               ></div>
               <div
                 className="w-80 h-50 rounded-2xl bg-orange-500 "
                 data-aos="fade-up"
-                 data-aos-delay="300" data-aos-duration="1500"
-              ></div>
-              <div
-                className="w-80 h-50 rounded-2xl bg-orange-500 "
-                data-aos="fade-up"
-                 data-aos-delay="300" data-aos-duration="1500"
+                data-aos-delay="300"
+                data-aos-duration="1500"
               ></div>
             </div>
           </section>
