@@ -6,7 +6,7 @@ const Main = () => {
   return (
     <>
       <div
-        className="bg-cover bg-center bg-no-repeat min-h-screen"
+        className="bg-cover bg-black bg-center bg-no-repeat min-h-screen"
         style={{
           backgroundImage:
             "url('https://img.freepik.com/free-vector/abstract-black-lines-geometric-background_677411-2748.jpg?semt=ais_hybrid&w=740')",
