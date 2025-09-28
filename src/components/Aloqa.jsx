@@ -97,7 +97,7 @@ const Aloqa = () => {
   return (
     <section id="Aloqa" className="scroll-mt-20 mt-20 px-4   ">
       <h1
-        className="text-5xl font-bold mb-6 text-orange-500 cursor-default select-none text-center"
+        className="text-5xl font-bold mb-6 text-[#31ddff] cursor-default select-none text-center"
         data-aos="zoom-in-down"
         data-aos-delay="100"
         data-aos-duration="1200"
@@ -137,7 +137,7 @@ const Aloqa = () => {
         <button
           type="submit"
           disabled={yuborilmoqda}
-          className="bg-orange-500 py-3 rounded-xl hover:bg-orange-600 transition text-white font-semibold"
+          className="w-50 mx-auto py-3 rounded-xl  transition font-semibold bg-white/5 backdrop-blur-xl border border-white/10 shadow-lg text-xl"
         >
           {yuborilmoqda ? "Yuborilmoqda..." : "Yuborish"}
         </button>

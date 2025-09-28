@@ -10,112 +10,72 @@ const Loyihalar = () => {
   useEffect(() => {
     AOS.init({});
   }, []);
+
+  const projects = [
+    {
+      id: 1,
+      title: "Calculator",
+      img: Calc,
+      link: "https://dynamic-tarsier-b0c5e5.netlify.app/",
+    },
+    {
+      id: 2,
+      title: "Music player",
+      img: Musc,
+      link: "https://relaxed-jalebi-86482b.netlify.app/",
+    },
+    {
+      id: 3,
+      title: "Media Web",
+      img: Media,
+      link: "https://react-radio-browser-five.vercel.app/",
+    },
+    {
+      id: 4,
+      title: "Weather App",
+      img: Weather,
+      link: "https://weather-react-app-goab.vercel.app/",
+    },
+  ];
+
   return (
-    <>
-      <div
-        className="bg-gradient-to-b from-black via-[#424242] to-black min-h-screen"
-        // style={{
-        //   backgroundImage:
-        //     "url('https://img.freepik.com/free-vector/black-background-with-focus-spot-light_1017-27230.jpg?semt=ais_hybrid&w=740')",
-        // }}
-      >
-        <div>
-          <section id="Loyihalar" className="flex flex-col gap-20 scroll-mt-25">
-            <h2 className="text-amber-600 text-4xl text-center font-bold">
-              Mening loyihalarim
-            </h2>
-            <div className="flex justify-around">
-              <a
-                href="https://dynamic-tarsier-b0c5e5.netlify.app/"
+    <div className="bg-gradient-to-b from-black via-[#424242] to-black min-h-screen">
+      <section id="Loyihalar" className="flex flex-col gap-20 scroll-mt-25">
+        <h2 className="text-[#31ddff] text-4xl text-center font-bold">
+          Mening loyihalarim
+        </h2>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 justify-items-center">
+          {projects.map((project, index) => (
+            <a
+              key={project.id}
+              href={project.link}
+              data-aos="fade-up"
+              data-aos-delay={500 + index * 100}
+              data-aos-duration="1500"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="w-80 rounded-2xl  px-3 py-5 bg-white/5 backdrop-blur-xl border border-white/10 shadow-lg  text-xl">
+                <img
+                  className="rounded-2xl"
+                  src={project.img}
+                  alt={project.title}
+                />
+              </div>
+              <p
+                className="text-center text-3xl mt-3"
                 data-aos="fade-up"
-                data-aos-delay="300"
+                data-aos-delay={400 + index * 100}
                 data-aos-duration="1500"
               >
-                <div className="w-80 h-50 rounded-2xl bg-orange-500 px-3 py-5 ">
-                  <img className="rounded-2xl" src={Calc} alt="" />
-                </div>
-                <p
-                  className="text-center text-3xl"
-                  data-aos="fade-up "
-                  data-aos-delay="300"
-                  data-aos-duration="1500"
-                >
-                  Calculator
-                </p>
-              </a>
-              <a
-                href="https://relaxed-jalebi-86482b.netlify.app/"
-                data-aos="fade-up"
-                data-aos-delay="300"
-                data-aos-duration="1500"
-              >
-                <div className="w-80 h-50 rounded-2xl bg-orange-500 px-3 py-6 ">
-                  <img className="rounded-2xl" src={Musc} alt="" />
-                </div>
-                <p
-                  className="text-center text-3xl"
-                  data-aos="fade-up "
-                  data-aos-delay="400"
-                  data-aos-duration="1500"
-                >
-                  Music player
-                </p>
-              </a>
-              <a
-                href="https://react-radio-browser-five.vercel.app/"
-                data-aos="fade-up"
-                data-aos-delay="300"
-                data-aos-duration="1500"
-              >
-                <div className="w-80 h-50 rounded-2xl bg-orange-500 px-3 py-4 ">
-                  <img className="rounded-2xl" src={Media} alt="" />
-                </div>
-                <p
-                  className="text-center text-3xl"
-                  data-aos="fade-up "
-                  data-aos-delay="400"
-                  data-aos-duration="1500"
-                >
-                  Media Web
-                </p>
-              </a>
-            </div>
-            <div className="flex justify-around">
-              <a
-                href="https://weather-react-app-goab.vercel.app/"
-                data-aos="fade-up"
-                data-aos-delay="300"
-                data-aos-duration="1500"
-              >
-                <div className="w-80 h-50 rounded-2xl bg-orange-500 px-3 py-4 ">
-                  <img className="rounded-2xl" src={Weather} alt="" />
-                </div>
-                <p
-                  className="text-center text-3xl"
-                  data-aos="fade-up "
-                  data-aos-delay="400"
-                  data-aos-duration="1500"
-                >
-                  Weather App
-                </p>
-              </a>
-              <div
-                className="w-80 h-50 rounded-2xl bg-orange-500 "
-                data-aos="fade-up"
-                data-aos-delay="300"
-                data-aos-duration="1500"
-              ></div>
-              <div
-                className="w-80 h-50 rounded-2xl bg-orange-500 "
-                data-aos="fade-up"
-                data-aos-delay="300"
-                data-aos-duration="1500"
-              ></div>
-            </div>
-          </section>
+                {project.title}
+              </p>
+            </a>
+          ))}
         </div>
-      </div>
-    </>
+      </section>
+    </div>
   );
 };
 

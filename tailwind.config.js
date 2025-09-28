@@ -1,16 +1,16 @@
 export default {
-  darkMode: "class",
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       keyframes: {
-        slideInLeft: {
-          "0%": { opacity: "0", transform: "translateX(-100px)" },
-          "100%": { opacity: "1", transform: "translateX(0)" },
+        spin: {
+          "0%": { transform: "rotate(0deg)" },
+          "100%": { transform: "rotate(360deg)" },
         },
       },
       animation: {
-        slideInLeft: "slideInLeft 0.8s ease-out forwards",
+        "spin-slow": "spin 3s linear infinite",
+        "spin-slower": "spin 6s linear infinite",
       },
     },
   },
