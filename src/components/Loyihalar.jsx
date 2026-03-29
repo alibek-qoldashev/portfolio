@@ -1,6 +1,8 @@
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+
+// Rasmlar importini tekshiring
 import Calc from "../assets/calc.png";
 import Musc from "../assets/musc.png";
 import Media from "../assets/media.png";
@@ -8,7 +10,10 @@ import Weather from "../assets/weather.png";
 
 const Loyihalar = () => {
   useEffect(() => {
-    AOS.init({});
+    AOS.init({
+      once: false, // Skrol qilganda qayta-qayta chiqishi uchun
+      duration: 1000,
+    });
   }, []);
 
   const projects = [
@@ -20,7 +25,7 @@ const Loyihalar = () => {
     },
     {
       id: 2,
-      title: "Music player",
+      title: "Music Player",
       img: Musc,
       link: "https://relaxed-jalebi-86482b.netlify.app/",
     },
@@ -39,39 +44,50 @@ const Loyihalar = () => {
   ];
 
   return (
-    <div className="bg-gradient-to-b from-black via-[#424242] to-black min-h-screen">
-      <section id="Loyihalar" className="flex flex-col gap-20 scroll-mt-25">
-        <h2 className="text-[#31ddff] text-4xl text-center font-bold">
-          Mening loyihalarim
+    <div className="bg-gradient-to-b from-black via-[#1a1a1a] to-black min-h-screen py-10 md:py-20 overflow-x-hidden">
+      <section
+        id="Loyihalar"
+        className="container mx-auto px-4 md:px-10 scroll-mt-24"
+      >
+        <h2
+          className="text-[#31ddff] text-3xl md:text-5xl text-center font-bold mb-10 md:mb-16"
+          data-aos="fade-down"
+        >
+          My Projects
         </h2>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 justify-items-center">
+        {/* Mobilda 2 ta ustun: grid-cols-2 */}
+        <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 md:gap-12">
           {projects.map((project, index) => (
-            <a
+            <div
               key={project.id}
-              href={project.link}
-              data-aos="fade-up"
-              data-aos-delay={500 + index * 100}
-              data-aos-duration="1500"
-              target="_blank"
-              rel="noopener noreferrer"
+              className="w-full group"
+              data-aos="zoom-in-up" // MANA ANIMATSIYA!
+              data-aos-delay={index * 100} // Navbat bilan chiqishi uchun
             >
-              <div className="w-80 rounded-2xl  px-3 py-5 bg-white/5 backdrop-blur-xl border border-white/10 shadow-lg  text-xl">
-                <img
-                  className="rounded-2xl"
-                  src={project.img}
-                  alt={project.title}
-                />
-              </div>
-              <p
-                className="text-center text-3xl mt-3"
-                data-aos="fade-up"
-                data-aos-delay={400 + index * 100}
-                data-aos-duration="1500"
+              <a
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block"
               >
-                {project.title}
-              </p>
-            </a>
+                {/* Kichikroq va chiroyli box */}
+                <div className="relative overflow-hidden rounded-xl bg-white/5 backdrop-blur-md border border-white/10 shadow-lg transition-all duration-300 group-hover:border-[#31ddff]/50">
+                  <div className="p-2 md:p-4">
+                    <img
+                      className="rounded-lg w-full h-[110px] sm:h-[180px] md:h-[250px] object-cover transition-transform duration-500 group-hover:scale-110"
+                      src={project.img}
+                      alt={project.title}
+                    />
+                  </div>
+                </div>
+
+                {/* Loyiha nomi */}
+                <p className="text-center text-sm md:text-2xl mt-3 text-white font-medium group-hover:text-[#31ddff] transition-colors">
+                  {project.title}
+                </p>
+              </a>
+            </div>
           ))}
         </div>
       </section>

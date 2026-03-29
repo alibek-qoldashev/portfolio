@@ -102,7 +102,7 @@ const Aloqa = () => {
         data-aos-delay="100"
         data-aos-duration="1200"
       >
-        Aloqa
+        Contact
       </h1>
 
       <form
@@ -113,7 +113,7 @@ const Aloqa = () => {
           name="ism"
           value={forma.ism}
           onChange={formaOzgarishi}
-          placeholder="Ismingiz"
+          placeholder="Name"
           required
           className="p-3 rounded-xl text-black bg-white"
         />
@@ -121,7 +121,7 @@ const Aloqa = () => {
           name="telegram"
           value={forma.telegram}
           onChange={formaOzgarishi}
-          placeholder="Telegram username (faqat ism, @siz)"
+          placeholder="Your contact info"
           required
           className="p-3 rounded-xl text-black bg-white"
         />
@@ -129,7 +129,7 @@ const Aloqa = () => {
           name="xabar"
           value={forma.xabar}
           onChange={formaOzgarishi}
-          placeholder="Xabaringiz"
+          placeholder="Type here"
           required
           rows={4}
           className="p-3 rounded-xl text-black bg-white"
@@ -137,7 +137,7 @@ const Aloqa = () => {
         <button
           type="submit"
           disabled={yuborilmoqda}
-          className="w-50 mx-auto py-3 rounded-xl  transition font-semibold bg-white/5 backdrop-blur-xl border border-white/10 shadow-lg text-xl"
+          className="w-50 mx-auto text-white py-3 rounded-xl  transition font-semibold bg-white/5 backdrop-blur-xl border border-white/10 shadow-lg text-xl"
         >
           {yuborilmoqda ? "Yuborilmoqda..." : "Yuborish"}
         </button>

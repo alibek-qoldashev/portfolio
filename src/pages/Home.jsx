@@ -9,7 +9,7 @@ import Aloqa from "../components/Aloqa";
 
 const Home = () => {
   return (
-    <div className="bg-white text-black dark:bg-black dark:text-white  min-h-screen flex flex-col gap-30 pt-3  ">
+    <div className="bg-black text-black dark:bg-black dark:text-white  min-h-screen flex flex-col gap-30 pt-3  ">
       <Main />
       <About />
       <Loyihalar />
