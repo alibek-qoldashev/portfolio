@@ -10,7 +10,7 @@ const Footer = () => {
           {/* Ism yoki Logo */}
           <div className="text-center md:text-left">
             <h2 className="text-[#31ddff] font-bold text-3xl cursor-pointer">
-              Alibek
+              RiMi
             </h2>
             <p className="text-gray-400 text-sm mt-2">Frontend Developer</p>
           </div>
@@ -21,7 +21,7 @@ const Footer = () => {
               href="tel:+998943854449"
               className="hover:text-[#31ddff] transition-colors select-none"
             >
-              +998 94 385 4449
+              +998911908828
             </a>
             <a
               href="mailto:kuldashevalibek12@gmail.com"
@@ -38,11 +38,17 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-gray-500 text-sm">
           <p>Copyright © 2026. All Rights Reserved</p>
           <div className="flex gap-6">
-            <a href="https://t.me/ullugbekvc" className="hover:text-white transition-colors">
+            <a
+              href="https://t.me/r1mii"
+              className="hover:text-white transition-colors"
+            >
               Telegram
             </a>
-            <a href="#" className="hover:text-white transition-colors">
-              GitHub
+            <a
+              href="https://www.instagram.com/rizakulov_01/"
+              className="hover:text-white transition-colors"
+            >
+              Instagram
             </a>
             <a href="#" className="hover:text-white transition-colors">
               LinkedIn

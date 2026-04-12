@@ -28,7 +28,7 @@ const Navbar = () => {
       {/* Logo */}
       <div className="z-[60]">
         <h2 className="text-[#31ddff] font-bold text-2xl md:text-3xl cursor-pointer">
-          Alibek
+          RiMi
         </h2>
       </div>
 

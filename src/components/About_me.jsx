@@ -25,7 +25,7 @@ const About_me = () => {
               About Me
             </h2>
             <p className="text-base md:text-lg text-gray-300 leading-relaxed max-w-2xl cursor-default select-none">
-              Hi! I'm **Alibek Kuldoshev**, a passionate Frontend Developer
+              Hi! I'm **Mirziyod Rizoqulov**, a passionate Frontend Developer
               dedicated to building modern and efficient web applications. I
               strive to create user-friendly interfaces using technologies like
               **HTML, CSS, JavaScript, and React.js**. My goal is to
@@ -60,7 +60,7 @@ const About_me = () => {
                 <p className="text-[#31ddff] font-medium">
                   Coddycamp IT Academy
                 </p>
-                <p className="text-sm">Aug 2024 - July 2025</p>
+                <p className="text-sm">Aug 2023 - July 2024</p>
               </div>
               <hr className="mt-4 border-white/10" />
             </div>
@@ -71,7 +71,7 @@ const About_me = () => {
                 English Language
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mt-2 text-gray-400">
-                <p className="text-[#31ddff] font-medium">Ielts Zone</p>
+                <p className="text-[#31ddff] font-medium">Cambridge</p>
                 <p className="text-sm">Mar 2023 - Jun 2024</p>
               </div>
               <hr className="mt-4 border-white/10" />

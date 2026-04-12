@@ -17,10 +17,10 @@ const Main = () => {
             My name is
           </p>
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-[#31ddff] cursor-default select-none leading-tight">
-            Alibek Kuldashev
+            Mirziyod Rizoqulov
           </h1>
           <p className="text-2xl md:text-4xl cursor-default select-none font-medium text-gray-300">
-            I'm a Frontend Developer
+            I'm a Frontend/Backend Developer
           </p>
 
           {/* Mobil uchun qo'shimcha tugma (ixtiyoriy) */}
